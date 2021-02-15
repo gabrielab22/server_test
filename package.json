@@ -1,0 +1,39 @@
+{
+  "name": "vjezba6",
+  "version": "0.0.1",
+  "description": "vježba6",
+  "main": "dist/server.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "env": "dotenvi -s ",
+    "start": "node dist/server.js",
+    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
+    "debug": "yarn run watch",
+    "watch-ts": "tsc -w",
+    "watch-node": "nodemon dist/server.js"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.2",
+    "@types/joi": "^14.3.4",
+    "@types/jsonwebtoken": "^8.3.5",
+    "@types/lodash": "^4.14.149",
+    "@types/uuid": "^3.4.6",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
+    "nodemon": "^1.19.4",
+    "reflect-metadata": "^0.1.13",
+    "typescript": "^3.7.2",
+    "uuid": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/shortid": "^0.0.29",
+    "dotenv": "^8.2.0"
+  }
+}
